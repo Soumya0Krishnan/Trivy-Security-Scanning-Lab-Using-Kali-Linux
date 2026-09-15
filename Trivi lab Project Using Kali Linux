@@ -1,4 +1,4 @@
-Trivi lab Project Using Kali Linux
+TrivY lab Project Using Kali Linux
 
 1.update and upgrade system packages
 
@@ -8,7 +8,7 @@ apt -get update && apt -get upgrade -y
 
 apt -get install docker.io -y
 
-3. Install Trivi 
+3. Install Trivy 
 
 sudo apt-get install wget gnupg
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
@@ -33,4 +33,4 @@ docker pull ngnix:1.19.6
 
 8.Scan the image for vulnerability
 
-trivi image ngnix:1.19.6
+trivy image ngnix:1.19.6
